@@ -1,0 +1,60 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+lcd_data                                                                          0x0276      50
+at_req                                                                            0x02A8     200
+at_res                                                                            0x0370     200
+_base_y                                                                           0x0438       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+lcd_cc                                                                            R5           1
+temp                                                                              R4           1
+_lcd_x                                                                            R7           1
+_lcd_y                                                                            R6           1
+_lcd_maxx                                                                         R9           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+SPI_PUT                                                                           0x0011D      8
+mf_write                                                                          0x00125     12
+mf_read                                                                           0x00131     16
+mf_reset                                                                          0x00141      5
+mf_init                                                                           0x00146     38
+mf_request                                                                        0x00247     47
+mf_get_card_serial                                                                0x00276     52
+trim                                                                              0x002AA     50
+sim900_HTTP_init                                                                  0x002DC     25
+send_HTTP_request                                                                 0x002F5     48
+main                                                                              0x00325    197
+_lcd_write_nibble_G100                                                            0x003EA     21
+_lcd_write_data                                                                   0x003FF     13
+lcd_gotoxy                                                                        0x0040C     13
+lcd_clear                                                                         0x00419     12
+lcd_putchar                                                                       0x00425     23
+lcd_puts                                                                          0x0043C     17
+lcd_putsf                                                                         0x0044D     19
+lcd_init                                                                          0x00460     46
+getchar                                                                           0x0048E      4
+putchar                                                                           0x00492      7
+put_usart_G101                                                                    0x00499     10
+put_buff_G101                                                                     0x004A3     57
+_print_G101                                                                       0x004DC    308
+sprintf                                                                           0x00610     46
+printf                                                                            0x0063E     31
+get_usart_G101                                                                    0x0065D     22
+_scanf_G101                                                                       0x00673    322
+scanf                                                                             0x007B5     29
+strcpy                                                                            0x007D2     13
+strlen                                                                            0x007DF     12
+strlenf                                                                           0x007EB     13
+strstr                                                                            0x007F8     23
+isdigit                                                                           0x0080F      9
+isspace                                                                           0x00818     11
+isxdigit                                                                          0x00823     15
